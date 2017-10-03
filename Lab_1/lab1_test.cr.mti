@@ -1,0 +1,53 @@
+{C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/led_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/led_decoder.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity led_decoder
+-- Compiling architecture behaviour of led_decoder
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_led_decoder
+-- Compiling architecture behaviour of tb_led_decoder
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(49): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_led_decoder.vhd(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/seven_seg_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/seven_seg_decoder.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seven_seg_decoder
+-- Compiling architecture behaviour of seven_seg_decoder
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_seven_seg_decoder
+-- Compiling architecture behaviour of tb_seven_seg_decoder
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(49): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1/tb_seven_seg_decoder.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

@@ -1,0 +1,392 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/McGill/Software_Install/EDU/Altera/15.0
+Eclock_divider
+Z0 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 OV;C;10.4d;61
+32
+Z4 !s110 1491350588
+!i10b 1
+Z5 w1484669446
+Z6 dE:/Documents/Lab_4
+Z7 8E:/Documents/Lab_4/clock_divider.vhd
+Z8 FE:/Documents/Lab_4/clock_divider.vhd
+l0
+L14
+Vj[9X9LAA6a9K`R2POIXBA1
+!s100 SBXDn`2S]0=OFAhm7Ll;W3
+Z9 !s108 1491350588.784000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/clock_divider.vhd|
+Z11 !s107 E:/Documents/Lab_4/clock_divider.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Abehaviour
+R0
+R1
+R2
+DEx4 work 13 clock_divider 0 22 j[9X9LAA6a9K`R2POIXBA1
+R3
+32
+R4
+!i10b 1
+l26
+L25
+V[k8@gmBdghOaU;KRgz[<N1
+!s100 1GM^TVo11@l?X=IL>hFK`3
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecolor_decoder
+R1
+R2
+R3
+32
+Z14 !s110 1491350658
+!i10b 1
+Z15 w1484065654
+R6
+8E:/Documents/Lab_4/color_decoder.vhd
+FE:/Documents/Lab_4/color_decoder.vhd
+l0
+L13
+VmXXG76dGC59P_ji;nS;I`3
+!s100 nNYHMePGLR6PO;KggzbPK1
+!s108 1491350658.117000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/color_decoder.vhd|
+!s107 E:/Documents/Lab_4/color_decoder.vhd|
+!i113 1
+R12
+R13
+Egame_controller
+Z16 w1491489155
+R0
+R1
+R2
+Z17 dC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4
+Z18 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/game_controller.vhd
+Z19 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/game_controller.vhd
+l0
+L15
+VHZNhMd6XD[MiN7==zR=hQ0
+!s100 ml=N?zFXPY50bG9AYNi212
+R3
+32
+Z20 !s110 1491493171
+!i10b 1
+Z21 !s108 1491493171.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/game_controller.vhd|
+Z23 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/game_controller.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R0
+R1
+R2
+Z24 DEx4 work 15 game_controller 0 22 HZNhMd6XD[MiN7==zR=hQ0
+l197
+L73
+Z25 VBZ1L0e@<5_W[QlTY6M77U2
+Z26 !s100 7ROiQ5>fDCdX?44Id31S50
+R3
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R12
+R13
+Eram_video_buffer
+R1
+R2
+R3
+32
+R14
+!i10b 1
+Z27 w1484076052
+R6
+Z28 8E:/Documents/Lab_4/ram_video_buffer.vhd
+Z29 FE:/Documents/Lab_4/ram_video_buffer.vhd
+l0
+L16
+VZoodLGEb0?dXoS36VFKGd3
+!s100 nC8X[;_2l[0;0jGg`T8IY3
+Z30 !s108 1491350658.836000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/ram_video_buffer.vhd|
+Z32 !s107 E:/Documents/Lab_4/ram_video_buffer.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+DEx4 work 16 ram_video_buffer 0 22 ZoodLGEb0?dXoS36VFKGd3
+R3
+32
+R14
+!i10b 1
+l47
+L42
+VRmaA^6602]ghdF>]RDF?U0
+!s100 =H6k4=CJNEDV1DAFYSDGZ3
+R30
+R31
+R32
+!i113 1
+R12
+R13
+Erandom_32bit
+R1
+R2
+R3
+32
+Z33 !s110 1491350660
+!i10b 1
+R15
+R6
+Z34 8E:/Documents/Lab_4/random_32bit.vhd
+Z35 FE:/Documents/Lab_4/random_32bit.vhd
+l0
+L12
+V;WMC0WZ6FXgKS2bU9H`Gb3
+!s100 D_VEO[ah6M<FM_KD3SO0A3
+Z36 !s108 1491350660.180000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/random_32bit.vhd|
+Z38 !s107 E:/Documents/Lab_4/random_32bit.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+DEx4 work 12 random_32bit 0 22 ;WMC0WZ6FXgKS2bU9H`Gb3
+R3
+32
+R33
+!i10b 1
+l19
+L17
+V[95doX1`n_nH0:Z^C9XWA2
+!s100 SBn44HeiTQS^[Rh]Z;JSg2
+R36
+R37
+R38
+!i113 1
+R12
+R13
+Esprite_rom
+R0
+R1
+R2
+R3
+32
+R33
+!i10b 1
+Z39 w1491338330
+R6
+Z40 8E:/Documents/Lab_4/sprite_rom.vhd
+Z41 FE:/Documents/Lab_4/sprite_rom.vhd
+l0
+L28
+V61B[7BfT_e41X8X6<nN0o3
+!s100 XDV=_]:b=g@6z<EJB8cc=3
+Z42 !s108 1491350660.680000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/sprite_rom.vhd|
+Z44 !s107 E:/Documents/Lab_4/sprite_rom.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R0
+R1
+R2
+DEx4 work 10 sprite_rom 0 22 61B[7BfT_e41X8X6<nN0o3
+R3
+32
+R33
+!i10b 1
+l138
+L42
+VkUaGmN0Ro<l0b>Dm2P5z30
+!s100 K?hAJK]lI81hjIm>b>TO23
+R42
+R43
+R44
+!i113 1
+R12
+R13
+Etb_game_controller
+Z45 w1491493168
+R0
+R1
+R2
+R17
+Z46 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/tb_game_controller.vhd
+Z47 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/tb_game_controller.vhd
+l0
+L12
+VAR46B[ml6aNSDIeNgjWfB2
+!s100 =?XHmg3CMDPTm5UKHVkB13
+R3
+33
+R20
+!i10b 1
+Z48 !s108 1491493170.000000
+Z49 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/tb_game_controller.vhd|
+Z50 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_4/tb_game_controller.vhd|
+!i113 1
+Z51 o-work work -2008 -explicit
+R13
+Abehaviour
+R0
+R1
+R2
+DEx4 work 18 tb_game_controller 0 22 AR46B[ml6aNSDIeNgjWfB2
+l52
+L15
+VAk93[R@N=ERnLBm^`D?U80
+!s100 ^n_c:zLg>DDUnb3<V[cQZ3
+R3
+33
+R20
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R51
+R13
+Evga_clk
+R0
+R1
+R2
+R3
+32
+Z52 !s110 1491350661
+!i10b 1
+Z53 w1491337222
+R6
+Z54 8E:/Documents/Lab_4/vga_clk.vhd
+Z55 FE:/Documents/Lab_4/vga_clk.vhd
+l0
+L11
+V0L_>mnf`TmB0SBE01cTNT0
+!s100 ]l8A]CT>8T=2z:i3hdD?d3
+Z56 !s108 1491350661.601000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/vga_clk.vhd|
+Z58 !s107 E:/Documents/Lab_4/vga_clk.vhd|
+!i113 1
+R12
+R13
+Artl
+R0
+R1
+R2
+DEx4 work 7 vga_clk 0 22 0L_>mnf`TmB0SBE01cTNT0
+R3
+32
+R52
+!i10b 1
+l30
+L20
+Ve9[35@6Qb:eeP53c7R44b3
+!s100 5OfOSo5GmZ95?6D=74gZl0
+R56
+R57
+R58
+!i113 1
+R12
+R13
+Evga_controller
+R1
+R2
+R3
+32
+Z59 !s110 1491350662
+!i10b 1
+Z60 w1484089816
+R6
+Z61 8E:/Documents/Lab_4/vga_controller.vhd
+Z62 FE:/Documents/Lab_4/vga_controller.vhd
+l0
+L26
+VHI8W:g:4:KMiGDfB^IMRP0
+!s100 1nbYdGk<zMfnUoQ88naON1
+Z63 !s108 1491350662.008000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/vga_controller.vhd|
+Z65 !s107 E:/Documents/Lab_4/vga_controller.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+DEx4 work 14 vga_controller 0 22 HI8W:g:4:KMiGDfB^IMRP0
+R3
+32
+R59
+!i10b 1
+l74
+L64
+VU:b^fEBIAJ;W@jV;`mAg]1
+!s100 X`e`elh_eU9J7V_?lXZjT1
+R63
+R64
+R65
+!i113 1
+R12
+R13
+Evideo_gen
+R1
+R2
+R3
+32
+R59
+!i10b 1
+Z66 w1484089834
+R6
+Z67 8E:/Documents/Lab_4/video_gen.vhd
+Z68 FE:/Documents/Lab_4/video_gen.vhd
+l0
+L13
+VR?[7KhUb`CCX?gJG:FHI=1
+!s100 b5cAbkK2gDefJJ=4GnjT02
+Z69 !s108 1491350662.539000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Documents/Lab_4/video_gen.vhd|
+Z71 !s107 E:/Documents/Lab_4/video_gen.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+DEx4 work 9 video_gen 0 22 R?[7KhUb`CCX?gJG:FHI=1
+R3
+32
+R59
+!i10b 1
+l44
+L31
+V<hb=znB36i:<`c^EPdgh;2
+!s100 lg5n5h^0K0zo7]c9IS_050
+R69
+R70
+R71
+!i113 1
+R12
+R13

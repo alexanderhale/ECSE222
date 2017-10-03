@@ -1,0 +1,211 @@
+
+<!-- saved from url=(0048)http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/ -->
+<html><script data-x-lastpass="">(function(){var c=0;if("undefined"!==typeof CustomEvent&&"function"===typeof window.dispatchEvent){var a=function(a){try{if("object"===typeof a&&(a=JSON.stringify(a)),"string"===typeof a)return window.dispatchEvent(new CustomEvent("lprequeststart",{detail:{data:a,requestID:++c}})),c}catch(f){}},b=function(a){try{window.dispatchEvent(new CustomEvent("lprequestend",{detail:a}))}catch(f){}};"undefined"!==typeof XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.send&&(XMLHttpRequest.prototype.send=
+function(c){return function(f){var d=this,e=a(f);e&&d.addEventListener("loadend",function(){b({requestID:e,statusCode:d.status})});return c.apply(d,arguments)}}(XMLHttpRequest.prototype.send));"function"===typeof fetch&&(fetch=function(c){return function(f,d){var e=a(d),g=c.apply(this,arguments);if(e){var h=function(a){b({requestID:e,statusCode:a&&a.status})};g.then(h)["catch"](h)}return g}}(fetch))}})();
+(function(){if("undefined"!==typeof CustomEvent){var c=function(a){if(a.lpsubmit)return a;var b=function(){try{this.dispatchEvent(new CustomEvent("lpsubmit"))}catch(k){}return a.apply(this,arguments)};b.lpsubmit=!0;return b};window.addEventListener("DOMContentLoaded",function(){if(document&&document.forms&&0<document.forms.length)for(var a=0;a<document.forms.length;++a)document.forms[a].submit=c(document.forms[a].submit)},!0);document.createElement=function(a){return function(){var b=a.apply(this,
+arguments);b&&"FORM"===b.nodeName&&b.submit&&(b.submit=c(b.submit));return b}}(document.createElement)}})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body{max-width:680px;margin:auto;padding:20px;text-align:justify;line-height:140%; -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;color:#222;font-family:Palatino,Georgia,"Times New Roman",serif}</style><style>body{counter-reset: h1 h2 h3 h4 h5 h6}.md code,pre{font-family:Menlo,Consolas,monospace;font-size:14.344825390773382px;line-height:140%}.md div.title{font-size:26px;font-weight:800;line-height:120%;text-align:center}.md div.afterTitles{height:10px}.md div.subtitle{text-align:center}.md .image{display:inline-block}.md div.imagecaption,.md div.tablecaption,.md div.listingcaption{margin:0.2em 5px 10px 5px;text-align: justify;font-style:italic}.md div.imagecaption{margin-bottom:0}.md img{max-width:100%;page-break-inside:avoid}li{text-align:left};.md div.tilde{margin:20px 0 -10px;text-align:center}.md blockquote.fancyquote{margin:25px 0 25px;text-align:left;line-height:160%}.md blockquote.fancyquote::before{content:"“";color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-right:6px;vertical-align:-0.3em}.md span.fancyquote{font-size:118%;color:#777;font-style:italic}.md span.fancyquote::after{content:"”";font-style:normal;color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-left:6px;vertical-align:-0.3em}.md blockquote.fancyquote .author{width:100%;margin-top:10px;display:inline-block;text-align:right}.md small{font-size:60%}.md div.title,contents,.md .tocHeader,h1,h2,h3,h4,h5,h6,.md .shortTOC,.md .mediumTOC,.nonumberh1,.nonumberh2,.nonumberh3,.nonumberh4,.nonumberh5,.nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;margin:13.4px 0 13.4px;padding:15px 0 3px;border-top:none;clear:both}.md svg.diagram{display:block;font-family:Menlo,Consolas,monospace;font-size:14.344825390773382px;text-align:center;stroke-linecap:round;stroke-width:2px;page-break-inside:avoid;stroke:#000;fill:#000}.md svg.diagram .opendot{fill:#FFF}.md svg.diagram text{stroke:none}.md a{font-family:Georgia,Palatino,'Times New Roman'}h1,.tocHeader,.nonumberh1{border-bottom:3px solid;font-size:20px;font-weight:bold;}h1,.nonumberh1{counter-reset: h2 h3 h4 h5 h6}h2,.nonumberh2{counter-reset: h3 h4 h5 h6;border-bottom:2px solid #999;color:#555;font-size:18px;}h3,h4,h5,h6,.nonumberh3,.nonumberh4,.nonumberh5,.nonumberh6{font-family:Helvetica,Arial,sans-serif;color:#555;font-size:16px;}h3{counter-reset:h4 h5 h6}h4{counter-reset:h5 h6}h5{counter-reset:h6}.md table{border-collapse:collapse;line-height:140%;page-break-inside:avoid}.md table.table{margin:auto}.md table.calendar{width:100%;margin:auto;font-size:11px;font-family:Helvetica,Arial,sans-serif}.md table.calendar th{font-size:16px}.md .today{background:#ECF8FA}.md .calendar .parenthesized{color:#999;font-style:italic}.md div.tablecaption{text-align:center}.md table.table th{color:#FFF;background-color:#AAA;border:1px solid #888;padding:8px 15px 8px 15px}.md table.table td{padding:5px 15px 5px 15px;border:1px solid #888}.md table.table tr:nth-child(even){background:#EEE}.md pre.tilde{border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;padding: 5px 0 5px 20px;margin:0 0 30px 0;background:#FCFCFC;page-break-inside:avoid}.md a:link, .md a:visited{color:#38A;text-decoration:none}.md a:link:hover{text-decoration:underline}.md dt{font-weight:700}dl>.md dd{padding:0 0 18px}.md dl>table{margin:35px 0 30px}.md code{white-space:pre;page-break-inside:avoid}.md .endnote{font-size:13px;line-height:15px;padding-left:10px;text-indent:-10px}.md .bib{padding-left:80px;text-indent:-80px;text-align:left}.markdeepFooter{font-size:9px;text-align:right;padding-top:80px;color:#999}.md .mediumTOC{float:right;font-size:12px;line-height:15px;border-left:1px solid #CCC;padding-left:15px;margin:15px 0px 15px 25px}.md .mediumTOC .level1{font-weight:600}.md .longTOC .level1{font-weight:600;display:block;padding-top:12px;margin:0 0 -20px}.md .shortTOC{text-align:center;font-weight:bold;margin-top:15px;font-size:14px}</style><style>h1::before {
+content:counter(h1) " ";
+counter-increment: h1;margin-right:10px}h2::before {
+content:counter(h1) "."counter(h2) " ";
+counter-increment: h2;margin-right:10px}h3::before {
+content:counter(h1) "."counter(h2) "."counter(h3) " ";
+counter-increment: h3;margin-right:10px}h4::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) " ";
+counter-increment: h4;margin-right:10px}h5::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) " ";
+counter-increment: h5;margin-right:10px}h6::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) "."counter(h6) " ";
+counter-increment: h6;margin-right:10px}</style><style>.hljs{display:block;overflow-x:auto;padding:0.5em;background:#fff;color:#000;-webkit-text-size-adjust:none}.hljs-comment{color:#006a00}.hljs-keyword{color:#02E}.hljs-literal,.nginx .hljs-title{color:#aa0d91}.method,.hljs-list .hljs-title,.hljs-tag .hljs-title,.setting .hljs-value,.hljs-winutils,.tex .hljs-command,.http .hljs-title,.hljs-request,.hljs-status,.hljs-name{color:#008}.hljs-envvar,.tex .hljs-special{color:#660}.hljs-string{color:#c41a16}.hljs-tag .hljs-value,.hljs-cdata,.hljs-filter .hljs-argument,.hljs-attr_selector,.apache .hljs-cbracket,.hljs-date,.hljs-regexp{color:#080}.hljs-sub .hljs-identifier,.hljs-pi,.hljs-tag,.hljs-tag .hljs-keyword,.hljs-decorator,.ini .hljs-title,.hljs-shebang,.hljs-prompt,.hljs-hexcolor,.hljs-rule .hljs-value,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-number,.css .hljs-function,.hljs-function .hljs-title,.coffeescript .hljs-attribute{color:#A0C}.hljs-function .hljs-title{font-weight:bold;color:#000}.hljs-class .hljs-title,.smalltalk .hljs-class,.hljs-type,.hljs-typename,.hljs-tag .hljs-attribute,.hljs-doctype,.hljs-class .hljs-id,.hljs-built_in,.setting,.hljs-params,.clojure .hljs-attribute{color:#5c2699}.hljs-variable{color:#3f6e74}.css .hljs-tag,.hljs-rule .hljs-property,.hljs-pseudo,.hljs-subst{color:#000}.css .hljs-class,.css .hljs-id{color:#9b703f}.hljs-value .hljs-important{color:#ff7700;font-weight:bold}.hljs-rule .hljs-keyword{color:#c5af75}.hljs-annotation,.apache .hljs-sqbracket,.nginx .hljs-built_in{color:#9b859d}.hljs-preprocessor,.hljs-preprocessor *,.hljs-pragma{color:#643820}.tex .hljs-formula{background-color:#eee;font-style:italic}.diff .hljs-header,.hljs-chunk{color:#808080;font-weight:bold}.diff .hljs-change{background-color:#bccff9}.hljs-addition{background-color:#baeeba}.hljs-deletion{background-color:#ffc8bd}.hljs-comment .hljs-doctag{font-weight:bold}.method .hljs-id{color:#000}</style><style>div.title { padding-top: 40px; } div.afterTitles { height: 15px; }</style><style class="fallback">body{visibility:hidden;}</style>
+            </head><body style="visibility: visible;"><span class="md"><p><title>ECSE 222: Digital Logic - Lab 1</title></p><div class="title"> ECSE 222: Digital Logic - Lab 1 </div>
+
+<div class="subtitle"> <em class="asterisk">Winter 2017</em> - <a href="http://www.mcgill.ca/">McGill University</a> - <a href="http://www.ece.mcgill.ca/">Electrical &amp; Computer Engineering</a> </div>
+<div class="subtitle"> Prof. <a href="http://www.cim.mcgill.ca/~derek">Derek Nowrouzezahrai</a>, <a href="mailto:derek@cim.mcgill.ca">derek@cim.mcgill.ca</a> </div>
+<div class="subtitle"> <em class="asterisk">TAs and Grader responsible for this assignment: </em> <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/loren.lugosch@gmail.com"></a><a href="mailto:Loren](loren.lugosch@gmail.com),">Loren</a>, <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/shabbir.hussain@mail.mcgill.ca"></a><a href="mailto:Shabbir](shabbir.hussain@mail.mcgill.ca)">Shabbir</a> and <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/ruiyin.wen@mail.mcgill.ca"></a><a href="mailto:Ray](ruiyin.wen@mail.mcgill.ca)">Ray</a> </div>
+<div class="afterTitles"></div><div class="mediumTOC"><center><b>contents</b></center><p><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc1" class="level1">1&nbsp; Overview</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc1.1" class="level2">1.1&nbsp; Concept Questions</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc1.2" class="level2">1.2&nbsp; Your FPGA Board</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc1.3" class="level2">1.3&nbsp; The LED Decoder</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc1.4" class="level2">1.4&nbsp; The 7-segment Decoder</a><br>
+<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc2" class="level1">2&nbsp; Instructions</a><br>
+<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/#toc3" class="level1">3&nbsp; Rubrick</a><br>
+</p></div>
+
+<p></p><p>
+
+<strong class="underscore">Due Date:</strong> The week of March 6 during your assigned lab section 
+
+</p><p>
+
+<strong class="underscore">Guidelines:</strong>
+
+</p><p>
+
+
+</p><ul>
+<li class="minus">Carefully and thoroughly read this lab document
+</li>
+<li class="minus">Follow the instructions to complete the lab
+</li>
+<li class="minus">Notify the TA when you're ready to be evaluated
+</li>
+<li class="minus">While this work is conducted in groups, each member is expected to fully understand every component of the solution!
+
+<p></p><p>
+
+</p></li></ul>
+
+<p></p><p>
+
+
+<a name="overview"></a><a name="toc1"></a></p><h1>Overview</h1>
+
+<p></p><p>
+
+This lab will use hands-on exercises to guide you through the basics of FPGAs and VHDL. Specifically, you will learn the basics of:
+
+</p><p>
+
+</p><ul>
+    <li class="minus">the Quartus and Modelsim software tools,
+</li>
+    <li class="minus">writing VHDL code, 
+</li>
+    <li class="minus">simulating and testing your HDL, and
+</li>
+    <li class="minus">uploading and running your HDL configuration on the FPGA board.
+
+<p></p><p>
+
+    </p></li></ul>
+During these exercises, you can refer to the course notes on Combinational Logic (and/or Chapter 6 in the textbook).
+
+<p></p><p>
+
+<a name="conceptquestions"></a><a name="toc1.1"></a></p><h2>Concept Questions</h2>
+
+<p></p><p>
+
+You may be asked some of these questions at the end of the lab. You can find the answers in the textbook, manual or using Google.
+
+</p><p>
+
+
+</p><ul>
+    <li class="minus">What are the advantages of using an FPGA instead of a processor?
+</li>
+    <li class="minus">What does a VHDL code listing describe, and how is it different than what a Java code listing describes?
+</li>
+    <li class="minus">Why can it take a long time for the VHDL compiler to complete its processing of your VHDL hardware specifications?
+
+<p></p><p>
+
+    </p></li></ul>
+<a name="yourfpgaboard"></a><a name="toc1.2"></a><h2>Your FPGA Board</h2>
+
+<p></p><p>
+
+You will be using the DE1-SOC board. You can find the manual for this board on the <a href="https://www.google.ca/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjC6IWMl4jRAhUI4oMKHbh7DFkQFggbMAA&amp;url=https%3A%2F%2Fwww.terasic.com.tw%2Fcgi-bin%2Fpage%2Farchive_download.pl%3FLanguage%3DTaiwan%26No%3D836%26FID%3Dfb723f964a1d785b94cd7880d8f210e5&amp;usg=AFQjCNHft1kaYPj20BYA_pVENPwFgapzbQ&amp;sig2=A59ZpskkS7i_rGdqPsQang&amp;bvm=bv.142059868,d.amc">DE1 Website</a>. Take a moment to skim through the manual as you will be referring to it frequently during the labs.
+
+</p><p>
+
+Your FPGA board contains many different input and output devices, including buttons, switches and LEDs. At a high-level, the tasks we will assign to you throughout the coming labs will expose you to these different features on the FPGA, allowing you to manipulate different outputs sources and treat input from different sources, too. 
+
+</p><p>
+
+<a name="theleddecoder"></a><a name="toc1.3"></a></p><h2>The LED Decoder</h2>
+
+<p></p><p>
+
+This first lab experimen will focus on implementing two hardware decoders to control the behavior of the LEDs and the 7-segment display.
+
+</p><p>
+
+For the first (LED) decoder, it's useful to starting thinking of this decoder as a circuit. As such, we will provide you with its specification, now. The LED decoder has 4 inputs and 10 outputs. The inputs represent a number (encoded in binary) and the outputs are associated with an index for which LED should be lit (according to the inputs). We want to create a decoder that will light up the LED that corresponds to the (binary) number we've inputted. The truth table for this circuit is as follows:
+<table class="table"><tbody><tr><th style="text-align:left">Input </th><th style="text-align:left"> Output</th></tr>
+<tr><td style="text-align:left">0000 </td><td style="text-align:left"> 1000000000</td></tr>
+<tr><td style="text-align:left">0001 </td><td style="text-align:left"> 0100000000</td></tr>
+<tr><td style="text-align:left">0010 </td><td style="text-align:left"> 0010000000</td></tr>
+<tr><td style="text-align:left">0011 </td><td style="text-align:left"> 0001000000</td></tr>
+<tr><td style="text-align:left">0100 </td><td style="text-align:left"> 0000100000</td></tr>
+<tr><td style="text-align:left">0101 </td><td style="text-align:left"> 0000010000</td></tr>
+<tr><td style="text-align:left">0110 </td><td style="text-align:left"> 0000001000</td></tr>
+<tr><td style="text-align:left">0111 </td><td style="text-align:left"> 0000000100</td></tr>
+<tr><td style="text-align:left">1000 </td><td style="text-align:left"> 0000000010</td></tr>
+<tr><td style="text-align:left">1001 </td><td style="text-align:left"> 0000000001</td></tr>
+</tbody></table>
+
+</p><p>
+
+<a name="the7-segmentdecoder"></a><a name="toc1.4"></a></p><h2>The 7-segment Decoder</h2>
+
+<p></p><p>
+
+The 7-segment decoder will activate a 7-segment display in order to display a decimal number between 0 and 9 (inclusively). This circuit will similarly have 4 inputs, but now only 7 outputs: the input again correspond to a number (in binary) and the output ow corresponds to a output pattern for the display elements. Be sure to read the manual's description about the 7-segment display: it will give you more thorough insight on how to program the FPGA to light up the appropriate segements.
+
+</p><p>
+
+In other words, here (unlike with the LED decoder), <em class="underscore">you</em> will have to complete the spec before moving on to the synthesis of the circuit.
+
+</p><p>
+
+
+<a name="instructions"></a><a name="toc2"></a></p><h1>Instructions</h1>
+
+<p></p><p>
+
+You will use your lab time to follow these video instructions in order to build two decoders and then demo them to your TA:
+
+</p><p>
+
+
+</p><ul>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/lab1.html">Setting up a project</a>,
+</li>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/lab1.2.html">Writing VHDL specifications in Quartus</a>,
+</li>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/lab1.3.html">Testing your design in Modelsim</a>,
+</li>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/lab1.4.html">Loading a program onto the FPGA board</a>,
+</li>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/lab1.5.html">Writing VHDL specifications in Modelsim</a>, and
+</li>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab1/lab1.6.html">Putting it all together</a>.
+
+<p></p><p>
+
+    </p></li></ul>
+Upon completion of these tasks, demo the project to your TA. You will be expected to:
+
+<p></p><p>
+
+</p><ul>
+    <li class="minus">show off and explain the funtionality you implemented, and
+</li>
+    <li class="minus">explain how your (V)HDL code works.
+
+<p></p><p>
+
+    </p></li></ul>
+
+<p></p><p>
+
+<a name="rubrick"></a><a name="toc3"></a></p><h1>Rubrick</h1>
+
+<p></p><p>
+
+You will be evaluated according to the following rubrick:
+
+</p><p>
+
+</p><ul>
+    <li class="minus"><strong class="underscore">[1 pts]</strong> LEDs light up in sequence.
+</li>
+    <li class="minus"><strong class="underscore">[2 pts]</strong> 7-segment display works correctly.
+</li>
+    <li class="minus"><strong class="underscore">[2 pts]</strong> Code segments are well documented and correctly explained.
+
+<p></p><p>
+
+    </p></li></ul>
+<!-- Markdeep: --><p></p></span><div class="markdeepFooter"><i>formatted by <a href="http://casual-effects.com/markdeep" style="color:#999">Markdeep&nbsp;&nbsp;&nbsp;</a></i><div style="display:inline-block;font-size:13px;font-family:&#39;Times New Roman&#39;,serif;vertical-align:middle;transform:translate(-3px,-1px)rotate(135deg);">✒</div></div></body></html>

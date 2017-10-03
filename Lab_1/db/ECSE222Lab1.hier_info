@@ -1,0 +1,105 @@
+|lab1_top_level_test
+leds[0] <= led_decoder:inst2.leds[0]
+leds[1] <= led_decoder:inst2.leds[1]
+leds[2] <= led_decoder:inst2.leds[2]
+leds[3] <= led_decoder:inst2.leds[3]
+leds[4] <= led_decoder:inst2.leds[4]
+leds[5] <= led_decoder:inst2.leds[5]
+leds[6] <= led_decoder:inst2.leds[6]
+leds[7] <= led_decoder:inst2.leds[7]
+leds[8] <= led_decoder:inst2.leds[8]
+leds[9] <= led_decoder:inst2.leds[9]
+count[0] => led_decoder:inst2.count[0]
+count[1] => led_decoder:inst2.count[1]
+count[2] => led_decoder:inst2.count[2]
+count[3] => led_decoder:inst2.count[3]
+segments[0] <= seven_seg_decoder:inst.segments[0]
+segments[1] <= seven_seg_decoder:inst.segments[1]
+segments[2] <= seven_seg_decoder:inst.segments[2]
+segments[3] <= seven_seg_decoder:inst.segments[3]
+segments[4] <= seven_seg_decoder:inst.segments[4]
+segments[5] <= seven_seg_decoder:inst.segments[5]
+segments[6] <= seven_seg_decoder:inst.segments[6]
+number[0] => seven_seg_decoder:inst.number[0]
+number[1] => seven_seg_decoder:inst.number[1]
+number[2] => seven_seg_decoder:inst.number[2]
+number[3] => seven_seg_decoder:inst.number[3]
+
+
+|lab1_top_level_test|led_decoder:inst2
+count[0] => leds.IN0
+count[0] => leds.IN0
+count[0] => leds.IN0
+count[0] => leds.IN0
+count[1] => leds.IN1
+count[1] => leds.IN1
+count[1] => leds.IN1
+count[1] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[2] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+count[3] => leds.IN1
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[7] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[8] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[9] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1_top_level_test|seven_seg_decoder:inst
+number[0] => Mux0.IN19
+number[0] => Mux1.IN19
+number[0] => Mux2.IN19
+number[0] => Mux3.IN19
+number[0] => Mux4.IN19
+number[0] => Mux5.IN19
+number[0] => Mux6.IN19
+number[1] => Mux0.IN18
+number[1] => Mux1.IN18
+number[1] => Mux2.IN18
+number[1] => Mux3.IN18
+number[1] => Mux4.IN18
+number[1] => Mux5.IN18
+number[1] => Mux6.IN18
+number[2] => Mux0.IN17
+number[2] => Mux1.IN17
+number[2] => Mux2.IN17
+number[2] => Mux3.IN17
+number[2] => Mux4.IN17
+number[2] => Mux5.IN17
+number[2] => Mux6.IN17
+number[3] => Mux0.IN16
+number[3] => Mux1.IN16
+number[3] => Mux2.IN16
+number[3] => Mux3.IN16
+number[3] => Mux4.IN16
+number[3] => Mux5.IN16
+number[3] => Mux6.IN16
+segments[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

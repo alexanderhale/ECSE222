@@ -1,0 +1,55 @@
+{C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_counter.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_counter
+-- Compiling architecture behaviour of tb_counter
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/clock_divider.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/clock_divider.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clock_divider
+-- Compiling architecture behaviour of clock_divider
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_clock_divider.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_clock_divider.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_clock_divider
+-- Compiling architecture behaviour of tb_clock_divider
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/score_keeper.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/score_keeper.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity score_keeper
+-- Compiling architecture behaviour of score_keeper
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/counter.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture behaviour of counter
+
+} {} {}} {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_score_keeper.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_score_keeper.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_score_keeper
+-- Compiling architecture behaviour of tb_score_keeper
+
+} {} {}}

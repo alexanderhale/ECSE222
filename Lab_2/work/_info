@@ -1,0 +1,256 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_1
+Eclock_divider
+Z0 w1489957756
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2
+Z5 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/clock_divider.vhd
+Z6 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/clock_divider.vhd
+l0
+L14
+Vn7KBLd];8UOl[eA9c5=312
+!s100 GiIMDJagL7;]3mJSRB3m_3
+Z7 OV;C;10.4d;61
+32
+Z8 !s110 1490108783
+!i10b 1
+Z9 !s108 1490108783.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/clock_divider.vhd|
+Z11 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/clock_divider.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Abehaviour
+R1
+R2
+R3
+Z14 DEx4 work 13 clock_divider 0 22 n7KBLd];8UOl[eA9c5=312
+l29
+L27
+Z15 VlJEA<1YnDf;HUgQL7nb[Y3
+Z16 !s100 ]d<POJ7823d8i489S7Y]V2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecounter
+Z17 w1489953739
+R1
+R2
+R3
+R4
+Z18 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/counter.vhd
+Z19 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/counter.vhd
+l0
+L14
+VHhc6df88AIggmS]92Co;73
+!s100 PmQ`m<C;[mUTCUPJbHLRH0
+R7
+32
+Z20 !s110 1490108782
+!i10b 1
+Z21 !s108 1490108782.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/counter.vhd|
+Z23 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/counter.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 7 counter 0 22 Hhc6df88AIggmS]92Co;73
+l28
+L26
+V_hQ87RIfMG3Gn<F>LHl>;0
+!s100 k_K44oU8HG1T1ODGQ3;a83
+R7
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R12
+R13
+Escore_keeper
+Z24 w1490108066
+R1
+R2
+R3
+R4
+Z25 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/score_keeper.vhd
+Z26 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/score_keeper.vhd
+l0
+L14
+VH=CZIXe?Cd9L[M:VCOaBd0
+!s100 Tg3P_FUinN:65Doh_k^f^2
+R7
+32
+R8
+!i10b 1
+R21
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/score_keeper.vhd|
+Z28 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/score_keeper.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 12 score_keeper 0 22 H=CZIXe?Cd9L[M:VCOaBd0
+l27
+L26
+VGaodlmmLabJbNfXm?n7UQ1
+!s100 i>9Pe=RZJ]=N7B[TD9BBl2
+R7
+32
+R8
+!i10b 1
+R21
+R27
+R28
+!i113 1
+R12
+R13
+Etb_clock_divider
+Z29 w1489957679
+R1
+R2
+R3
+R4
+Z30 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_clock_divider.vhd
+Z31 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_clock_divider.vhd
+l0
+L14
+V>>3imFF^fl_IMY5gDcd3z0
+!s100 TKIZLgO=e^NV_@<UTZR]>3
+R7
+32
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_clock_divider.vhd|
+Z33 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_clock_divider.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 16 tb_clock_divider 0 22 >>3imFF^fl_IMY5gDcd3z0
+l40
+L17
+VDXJGXhj^ZSm=DZV3kWjX:2
+!s100 ib^6<OcoQ6ZadGCdeVNP;1
+R7
+32
+R8
+!i10b 1
+R9
+R32
+R33
+!i113 1
+R12
+R13
+Etb_counter
+Z34 w1489954055
+R1
+R2
+R3
+R4
+Z35 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_counter.vhd
+Z36 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_counter.vhd
+l0
+L14
+VaZ@mJR4>eA>z[jna0n1a21
+!s100 jXi_]Whh]D3KZmIbClRKA2
+R7
+32
+R20
+!i10b 1
+R21
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_counter.vhd|
+Z38 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_counter.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 10 tb_counter 0 22 aZ@mJR4>eA>z[jna0n1a21
+l38
+L17
+VeoH?kVQ`>QBi>m:_c3X`:3
+!s100 :`9GEcM514m[;_I9lD<kI2
+R7
+32
+R20
+!i10b 1
+R21
+R37
+R38
+!i113 1
+R12
+R13
+Etb_score_keeper
+Z39 w1490108775
+R1
+R2
+R3
+R4
+Z40 8C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_score_keeper.vhd
+Z41 FC:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_score_keeper.vhd
+l0
+L13
+VVfa;N<VI9^c[OTiQVfdZM2
+!s100 oLA8L]JTLZ7355mZSeBN10
+R7
+32
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_score_keeper.vhd|
+Z43 !s107 C:/Users/Alex/Documents/McGill/ECSE 222/Labs/Lab_2/tb_score_keeper.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 15 tb_score_keeper 0 22 Vfa;N<VI9^c[OTiQVfdZM2
+l43
+L16
+V`@ndQ<kDcB3igNIZgHKk`1
+!s100 oUm:XeVmHEdL;C=WFYYYG1
+R7
+32
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13

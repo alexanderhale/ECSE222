@@ -1,0 +1,487 @@
+
+<!-- saved from url=(0048)http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body{max-width:680px;margin:auto;padding:20px;text-align:justify;line-height:140%; -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;color:#222;font-family:Palatino,Georgia,"Times New Roman",serif}</style><style>body{counter-reset: h1 h2 h3 h4 h5 h6}.md code,pre{font-family:Menlo,Consolas,monospace;font-size:14.344825390773382px;line-height:140%}.md div.title{font-size:26px;font-weight:800;line-height:120%;text-align:center}.md div.afterTitles{height:10px}.md div.subtitle{text-align:center}.md .image{display:inline-block}.md div.imagecaption,.md div.tablecaption,.md div.listingcaption{margin:0.2em 5px 10px 5px;text-align: justify;font-style:italic}.md div.imagecaption{margin-bottom:0}.md img{max-width:100%;page-break-inside:avoid}li{text-align:left};.md div.tilde{margin:20px 0 -10px;text-align:center}.md blockquote.fancyquote{margin:25px 0 25px;text-align:left;line-height:160%}.md blockquote.fancyquote::before{content:"“";color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-right:6px;vertical-align:-0.3em}.md span.fancyquote{font-size:118%;color:#777;font-style:italic}.md span.fancyquote::after{content:"”";font-style:normal;color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-left:6px;vertical-align:-0.3em}.md blockquote.fancyquote .author{width:100%;margin-top:10px;display:inline-block;text-align:right}.md small{font-size:60%}.md div.title,contents,.md .tocHeader,h1,h2,h3,h4,h5,h6,.md .shortTOC,.md .mediumTOC,.nonumberh1,.nonumberh2,.nonumberh3,.nonumberh4,.nonumberh5,.nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;margin:13.4px 0 13.4px;padding:15px 0 3px;border-top:none;clear:both}.md svg.diagram{display:block;font-family:Menlo,Consolas,monospace;font-size:14.344825390773382px;text-align:center;stroke-linecap:round;stroke-width:2px;page-break-inside:avoid;stroke:#000;fill:#000}.md svg.diagram .opendot{fill:#FFF}.md svg.diagram text{stroke:none}.md a{font-family:Georgia,Palatino,'Times New Roman'}h1,.tocHeader,.nonumberh1{border-bottom:3px solid;font-size:20px;font-weight:bold;}h1,.nonumberh1{counter-reset: h2 h3 h4 h5 h6}h2,.nonumberh2{counter-reset: h3 h4 h5 h6;border-bottom:2px solid #999;color:#555;font-size:18px;}h3,h4,h5,h6,.nonumberh3,.nonumberh4,.nonumberh5,.nonumberh6{font-family:Helvetica,Arial,sans-serif;color:#555;font-size:16px;}h3{counter-reset:h4 h5 h6}h4{counter-reset:h5 h6}h5{counter-reset:h6}.md table{border-collapse:collapse;line-height:140%;page-break-inside:avoid}.md table.table{margin:auto}.md table.calendar{width:100%;margin:auto;font-size:11px;font-family:Helvetica,Arial,sans-serif}.md table.calendar th{font-size:16px}.md .today{background:#ECF8FA}.md .calendar .parenthesized{color:#999;font-style:italic}.md div.tablecaption{text-align:center}.md table.table th{color:#FFF;background-color:#AAA;border:1px solid #888;padding:8px 15px 8px 15px}.md table.table td{padding:5px 15px 5px 15px;border:1px solid #888}.md table.table tr:nth-child(even){background:#EEE}.md pre.tilde{border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;padding: 5px 0 5px 20px;margin:0 0 30px 0;background:#FCFCFC;page-break-inside:avoid}.md a:link, .md a:visited{color:#38A;text-decoration:none}.md a:link:hover{text-decoration:underline}.md dt{font-weight:700}dl>.md dd{padding:0 0 18px}.md dl>table{margin:35px 0 30px}.md code{white-space:pre;page-break-inside:avoid}.md .endnote{font-size:13px;line-height:15px;padding-left:10px;text-indent:-10px}.md .bib{padding-left:80px;text-indent:-80px;text-align:left}.markdeepFooter{font-size:9px;text-align:right;padding-top:80px;color:#999}.md .mediumTOC{float:right;font-size:12px;line-height:15px;border-left:1px solid #CCC;padding-left:15px;margin:15px 0px 15px 25px}.md .mediumTOC .level1{font-weight:600}.md .longTOC .level1{font-weight:600;display:block;padding-top:12px;margin:0 0 -20px}.md .shortTOC{text-align:center;font-weight:bold;margin-top:15px;font-size:14px}</style><style>h1::before {
+content:counter(h1) " ";
+counter-increment: h1;margin-right:10px}h2::before {
+content:counter(h1) "."counter(h2) " ";
+counter-increment: h2;margin-right:10px}h3::before {
+content:counter(h1) "."counter(h2) "."counter(h3) " ";
+counter-increment: h3;margin-right:10px}h4::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) " ";
+counter-increment: h4;margin-right:10px}h5::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) " ";
+counter-increment: h5;margin-right:10px}h6::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) "."counter(h6) " ";
+counter-increment: h6;margin-right:10px}</style><style>.hljs{display:block;overflow-x:auto;padding:0.5em;background:#fff;color:#000;-webkit-text-size-adjust:none}.hljs-comment{color:#006a00}.hljs-keyword{color:#02E}.hljs-literal,.nginx .hljs-title{color:#aa0d91}.method,.hljs-list .hljs-title,.hljs-tag .hljs-title,.setting .hljs-value,.hljs-winutils,.tex .hljs-command,.http .hljs-title,.hljs-request,.hljs-status,.hljs-name{color:#008}.hljs-envvar,.tex .hljs-special{color:#660}.hljs-string{color:#c41a16}.hljs-tag .hljs-value,.hljs-cdata,.hljs-filter .hljs-argument,.hljs-attr_selector,.apache .hljs-cbracket,.hljs-date,.hljs-regexp{color:#080}.hljs-sub .hljs-identifier,.hljs-pi,.hljs-tag,.hljs-tag .hljs-keyword,.hljs-decorator,.ini .hljs-title,.hljs-shebang,.hljs-prompt,.hljs-hexcolor,.hljs-rule .hljs-value,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-number,.css .hljs-function,.hljs-function .hljs-title,.coffeescript .hljs-attribute{color:#A0C}.hljs-function .hljs-title{font-weight:bold;color:#000}.hljs-class .hljs-title,.smalltalk .hljs-class,.hljs-type,.hljs-typename,.hljs-tag .hljs-attribute,.hljs-doctype,.hljs-class .hljs-id,.hljs-built_in,.setting,.hljs-params,.clojure .hljs-attribute{color:#5c2699}.hljs-variable{color:#3f6e74}.css .hljs-tag,.hljs-rule .hljs-property,.hljs-pseudo,.hljs-subst{color:#000}.css .hljs-class,.css .hljs-id{color:#9b703f}.hljs-value .hljs-important{color:#ff7700;font-weight:bold}.hljs-rule .hljs-keyword{color:#c5af75}.hljs-annotation,.apache .hljs-sqbracket,.nginx .hljs-built_in{color:#9b859d}.hljs-preprocessor,.hljs-preprocessor *,.hljs-pragma{color:#643820}.tex .hljs-formula{background-color:#eee;font-style:italic}.diff .hljs-header,.hljs-chunk{color:#808080;font-weight:bold}.diff .hljs-change{background-color:#bccff9}.hljs-addition{background-color:#baeeba}.hljs-deletion{background-color:#ffc8bd}.hljs-comment .hljs-doctag{font-weight:bold}.method .hljs-id{color:#000}</style><style>div.title { padding-top: 40px; } div.afterTitles { height: 15px; }</style><style class="fallback">body{visibility:hidden;}</style>
+            <script type="text/javascript" src="./ECSE 222_ Digital Logic - Lab 3_files/MathJax.js.download"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Main-bold; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Main-italic; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Math-italic; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.0') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head><body style="visibility: visible;"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"><br></div></div><div id="MathJax_Message" style="display: none;"></div><script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script><span style="display:none"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><div class="MathJax_Display" style="text-align: center;"><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot; /&gt;" role="presentation" style="text-align: center; position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(3.832em 1000em 4.169em -999.997em); top: -3.995em; left: 0em;"><span class="mrow" id="MathJax-Span-2"></span><span style="display: inline-block; width: 0px; height: 4.001em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.128em;"></span></span></nobr><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"></math></span></span></div><script type="math/tex; mode=display" id="MathJax-Element-1">\newcommand{\n}{\hat{n}}\newcommand{\w}{\hat{\omega}}\newcommand{\wi}{\w_\mathrm{i}}\newcommand{\wo}{\w_\mathrm{o}}\newcommand{\wh}{\w_\mathrm{h}}\newcommand{\Li}{L_\mathrm{i}}\newcommand{\Lo}{L_\mathrm{o}}\newcommand{\Le}{L_\mathrm{e}}\newcommand{\Lr}{L_\mathrm{r}}\newcommand{\Lt}{L_\mathrm{t}}\newcommand{\O}{\mathrm{O}}\newcommand{\degrees}{{^\circ}}\newcommand{\T}{\mathsf{T}}\newcommand{\mathset}[1]{\mathbb{#1}}\newcommand{\Real}{\mathset{R}}\newcommand{\Integer}{\mathset{Z}}\newcommand{\Boolean}{\mathset{B}}\newcommand{\Complex}{\mathset{C}}</script>
+</span>
+<span class="md"><p><title>ECSE 222: Digital Logic - Lab 3</title></p><div class="title"> ECSE 222: Digital Logic - Lab 3 </div>
+
+<div class="subtitle"> <em class="asterisk">Winter 2017</em> - <a href="http://www.mcgill.ca/">McGill University</a> - <a href="http://www.ece.mcgill.ca/">Electrical &amp; Computer Engineering</a> </div>
+<div class="subtitle"> Prof. <a href="http://www.cim.mcgill.ca/~derek">Derek Nowrouzezahrai</a>, <a href="mailto:derek@cim.mcgill.ca">derek@cim.mcgill.ca</a> </div>
+<div class="subtitle"> <em class="asterisk">TAs and Grader responsible for this assignment: </em> <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/loren.lugosch@gmail.com"></a><a href="mailto:Loren](loren.lugosch@gmail.com)">Loren</a> and <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/shabbir.hussain@mail.mcgill.ca"></a><a href="mailto:Shabbir](shabbir.hussain@mail.mcgill.ca)">Shabbir</a> </div>
+<div class="afterTitles"></div><div class="mediumTOC"><center><b>contents</b></center><p><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc1" class="level1">1&nbsp; Overview</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc1.1" class="level2">1.1&nbsp; Video Graphics Array (VGA)</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc1.2" class="level2">1.2&nbsp; Synchronization</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc1.3" class="level2">1.3&nbsp; Screen Coordinates</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc1.4" class="level2">1.4&nbsp; Precise Clocking Using PLLs</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc1.5" class="level2">1.5&nbsp; Additional Resources</a><br>
+<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2" class="level1">2&nbsp; Instructions</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2.1" class="level2">2.1&nbsp; Step 1</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2.2" class="level2">2.2&nbsp; Step 2</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2.3" class="level2">2.3&nbsp; Step 3</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2.4" class="level2">2.4&nbsp; Step 4</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2.5" class="level2">2.5&nbsp; Step 4</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc2.6" class="level2">2.6&nbsp; Grading</a><br>
+<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc3" class="level1">3&nbsp; You will be evaluated according to the following rubrick:</a><br>
+&nbsp;&nbsp;<a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#toc3.1" class="level2">3.1&nbsp; Bonus</a><br>
+</p></div>
+
+<p></p><p>
+
+<strong class="underscore">Due Date:</strong> The week of March 27 during your lab section 
+
+</p><p>
+
+<strong class="underscore">Guidelines:</strong>
+
+</p><p>
+
+
+</p><ul>
+<li class="minus">Carefully and thoroughly read this lab document
+</li>
+<li class="minus">Follow the instructions to complete the lab
+</li>
+<li class="minus">Notify the TA when you're ready to be evaluated
+</li>
+<li class="minus">While this work is conducted in groups, each member is expected to fully understand every component of the solution!
+
+<p></p><p>
+
+</p></li></ul>
+
+<p></p><p>
+
+<a name="overview"></a><a name="toc1"></a></p><h1>Overview</h1>
+
+<p></p><p>
+
+Over the course of the next two lab assignments you will design a clone of the popular <b>Space Invaders</b> acrade game. Your implementation of this game will comprise several <em class="underscore">entities</em> wired together to make the game come alive. Specifically, you will design:
+
+</p><p>
+
+
+</p><ul>
+<li class="minus">a VGA video controller, 
+</li>
+<li class="minus">a memory unit for the game sprites, and 
+</li>
+<li class="minus">a state machine to control the behavior of the game. 
+
+<p></p><p>
+
+</p></li></ul>
+This lab will focus on designing a simple VGA video controller. If successfully completed, you will have an implementation that displays color bars on a standard computer monitor. This lab provides less explicit video instructions, relying on you to put more effort into understanding and completing the required tasks. That being said, we're not leaving you completely in the dark: some (incomplete) VHDL source files are provided to help bootstrap you.
+
+<p></p><p>
+
+<a name="videographicsarray(vga)"></a><a name="toc1.1"></a></p><h2>Video Graphics Array (VGA)</h2>
+
+<p></p><p>
+
+VGA is a standard that relies on a technique called <em class="underscore">raster scanning</em> to display images on a screen. This technique outputs pixels onto the screen one at a time, starting from the top left and ending at the bottom right of the screen (i.e., in english reading order). In other words, raster scanning outputs pixels in row-order, from top to bottom.
+
+</p><p>
+
+Once the bottom is reached (and, so, we've completed displaying the desired output image), the raster scan starts back at the top left and repeats. Each top-to-bottom scan is called a “frame” and, if we succeed in drawing a frame at a rate of e.g., 60 Hz, then we can say we're outputing frames at 60 FPS (frames per second). Your final Space Invaders clone will be operate with a video output of 60 FPS. 
+
+</p><p>
+
+Each row of outputted pixels is referred to as a “scan line”, the process of moving to the far-left pixel column in order to begin drawing a subsequent scan line is called the “horizontal retrace”, and once every scan line has been completely outputed we perform a “vertical retrace” in order to restart at the top-left pixel.
+
+</p><p>
+
+</p><center><div class="image" style=""><img class="markdeep" src="./ECSE 222_ Digital Logic - Lab 3_files/raster_scan.jpg"><div class="imagecaption">Raster scanning terminology for a single output frame.</div></div></center>
+
+<p></p><p>
+
+
+<a name="synchronization"></a><a name="toc1.2"></a></p><h2>Synchronization</h2>
+
+<p></p><p>
+
+We will develop circuitry (that'll “run” on our FPGA) in order to correctly communicate image data to the computer screen/monitor. At a high-level, this data will come in the form of pixel coordinates and pixel colors: what color do we set each pixel of the image. 
+
+</p><p>
+
+Any time two separate devices need to work together to achieve a task, it is useful to have an established protocol in order to synchronize their operations. Displaying video through the VGA interface requires precise timing, as the screen device has strictly defined hoziontal and vertical synchronization pulses.
+
+</p><p>
+
+<!--The VGA protocol specifies that a screen will expect several synchronization delays before allowing a device to send actual pixel data for display.-->
+
+</p><p>
+
+An image (or “frame”) comprises many horizontal scanlines (one for each “row” of the image). Before allowing pixel data to be transmitted and displayed on-screen, each frame (and every individual scanline in it) follows a very strict synchronization protocol.
+
+</p><p>
+
+A frame starts by expecting two synchronization delays: first, a <em class="underscore">vertical sync pulse</em>, and then a (frame) <em class="underscore">back porch</em>. Once synchronized, the frame will allow for horizontal scanlines to be populated until the image data is fully communicated, before finally expecting a terminal <em class="underscore">front porch</em> synchronization delay<sup><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#endnote-footnote1">1</a></sup>. 
+
+</p><p>
+
+During front porch, back porch and the sync pulses, a “blank” signal must be communicated (active low, meaning 0) and the RGB signals must also be set low. 
+
+</p><p>
+
+Once the frame is initialized (i.e., after it's vertical sync pulse and back porch expire), then the protocol will expect horizontal scanlines to be communicated, one after the other, according to the following scanline sub-protocol: each horizontal/scan line begin with two synchronization delays, a <em class="underscore">horizontal sync pulse</em>  followed by a <em class="underscore">(scanline) back porch</em>. Afterwards, the device will expect the scanline's pixel data to be communicated<sup><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#endnote-footnote2">2</a></sup>, before expecting one last <em class="underscore">(scanline) front porch</em> synchronization delay. 
+
+</p><p>
+
+The duration of each of the aforementioned synchronization delays depends on the display resolution you plan on using, and a table detailing these timing constants are found in the FPGA <a href="ftp://ftp.altera.com/up/pub/Altera_Material/Boards/DE1-SoC/DE1_SoC_User_Manual.pdf">user manual</a>.
+
+</p><p>
+
+Note that it is common practice for VGA documentation to refer to individual clock cycles as “pixels”: for example, if we say that the scanline front porch is 10 pixels long, we mean that it lasts 10 clock cycles.
+
+</p><p>
+
+
+<a name="screencoordinates"></a><a name="toc1.3"></a></p><h2>Screen Coordinates</h2>
+
+<p></p><p>
+
+You would have already learned about Cartesian coordinates in your algebra and calculus classes. Here, when you graph functions, it is common to place the <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-3" style="width: 2.706em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.424em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1002.37em 2.368em -999.997em); top: -2.193em; left: 0em;"><span class="mrow" id="MathJax-Span-4"><span class="mi" id="MathJax-Span-5" style="font-family: MathJax_Math-italic;">x</span><span class="mo" id="MathJax-Span-6" style="font-family: MathJax_Main; padding-left: 0.284em;">=</span><span class="mn" id="MathJax-Span-7" style="font-family: MathJax_Main; padding-left: 0.284em;">0</span></span><span style="display: inline-block; width: 0px; height: 2.199em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-2">x = 0</script> and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-8" style="width: 2.593em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.311em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1002.25em 2.593em -999.997em); top: -2.193em; left: 0em;"><span class="mrow" id="MathJax-Span-9"><span class="mi" id="MathJax-Span-10" style="font-family: MathJax_Math-italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-11" style="font-family: MathJax_Main; padding-left: 0.284em;">=</span><span class="mn" id="MathJax-Span-12" style="font-family: MathJax_Main; padding-left: 0.284em;">0</span></span><span style="display: inline-block; width: 0px; height: 2.199em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 1.066em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-3">y = 0</script> origins either at the bottom left or center of your plot; furthermore, you're probably used to having <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-13" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1000.51em 2.142em -999.997em); top: -1.968em; left: 0em;"><span class="mrow" id="MathJax-Span-14"><span class="mi" id="MathJax-Span-15" style="font-family: MathJax_Math-italic;">x</span></span><span style="display: inline-block; width: 0px; height: 1.974em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.628em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></span></span><script type="math/tex" id="MathJax-Element-4">x</script> increase in the right direction and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-16" style="width: 0.566em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.51em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1000.51em 2.368em -999.997em); top: -1.968em; left: 0em;"><span class="mrow" id="MathJax-Span-17"><span class="mi" id="MathJax-Span-18" style="font-family: MathJax_Math-italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 1.974em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 0.816em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math></span></span><script type="math/tex" id="MathJax-Element-5">y</script> increase when moving upwards.
+
+</p><p>
+
+VGA video pixel coordinates do not follow this convention. Instead, the <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-19" style="width: 2.706em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.424em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1002.37em 2.368em -999.997em); top: -2.193em; left: 0em;"><span class="mrow" id="MathJax-Span-20"><span class="mi" id="MathJax-Span-21" style="font-family: MathJax_Math-italic;">x</span><span class="mo" id="MathJax-Span-22" style="font-family: MathJax_Main; padding-left: 0.284em;">=</span><span class="mn" id="MathJax-Span-23" style="font-family: MathJax_Main; padding-left: 0.284em;">0</span></span><span style="display: inline-block; width: 0px; height: 2.199em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-6">x = 0</script> and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-24" style="width: 2.593em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.311em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1002.25em 2.593em -999.997em); top: -2.193em; left: 0em;"><span class="mrow" id="MathJax-Span-25"><span class="mi" id="MathJax-Span-26" style="font-family: MathJax_Math-italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-27" style="font-family: MathJax_Main; padding-left: 0.284em;">=</span><span class="mn" id="MathJax-Span-28" style="font-family: MathJax_Main; padding-left: 0.284em;">0</span></span><span style="display: inline-block; width: 0px; height: 2.199em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 1.066em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-7">y = 0</script> origin start at the <strong class="underscore">top left corner</strong> of the screen (and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-29" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1000.51em 2.142em -999.997em); top: -1.968em; left: 0em;"><span class="mrow" id="MathJax-Span-30"><span class="mi" id="MathJax-Span-31" style="font-family: MathJax_Math-italic;">x</span></span><span style="display: inline-block; width: 0px; height: 1.974em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.628em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">x</script> still increases when moving to the right), and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-32" style="width: 0.566em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.51em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1000.51em 2.368em -999.997em); top: -1.968em; left: 0em;"><span class="mrow" id="MathJax-Span-33"><span class="mi" id="MathJax-Span-34" style="font-family: MathJax_Math-italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 1.974em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 0.816em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">y</script> increases <strong class="underscore">when moving downwards</strong>.
+
+</p><p>
+
+</p><center><div class="image" style=""><img class="markdeep" src="./ECSE 222_ Digital Logic - Lab 3_files/coords.gif"><div class="imagecaption">VGA Coordinates</div></div></center>
+
+<p></p><p>
+
+You will also notice that the VHDL source we provide to you makes use of <code>pixel_x</code> and <code>hpos</code> signals, as well as <code>pixel_y</code> and <code>vpos</code> signals. While your initial reaction might be that these signals are redundant, this not in fact the case: <code>pixel_x</code> and <code>pixel_y</code> represent the position of the RGB cursor <strong class="underscore">after</strong> synchronization has been completed. The <code>hpos</code> and <code>vpos</code> signals, on the other hand, represent the position of the “raster cursor” that includes the front porch, sync, and back porch delays (as well as the RGB data count). Be mindful of this difference.
+
+</p><p>
+
+Here's an example of the different values that these signals can take when, say, you are drawing the first horizonal scanline (assuming a horizontal screen resolution of 640):
+<table class="table"><tbody><tr><th style="text-align:left"><code>hpos</code> </th><th style="text-align:left"> <code>pixel_x</code></th></tr>
+<tr><td style="text-align:left"> <code>hpos</code> = 0</td><td style="text-align:left"> <code>pixel_x</code> = 0</td></tr>
+<tr><td style="text-align:left"><code>hpos</code> = hsync + back porch</td><td style="text-align:left"> <code>pixel_x</code> = 0</td></tr>
+<tr><td style="text-align:left"><code>hpos</code> = Sync + back porch + 10</td><td style="text-align:left"> <code>pixel_x</code> = 10</td></tr>
+<tr><td style="text-align:left"><code>hpos</code> = Sync + back porch + 640</td><td style="text-align:left"> <code>pixel_x</code> = 640</td></tr>
+<tr><td style="text-align:left"><code>hpos</code> = Sync + back porch + 640 + 1</td><td style="text-align:left"> <code>pixel_x</code> = 640</td></tr>
+</tbody></table>
+
+</p><p>
+
+
+<a name="preciseclockingusingplls"></a><a name="toc1.4"></a></p><h2>Precise Clocking Using PLLs</h2>
+
+<p></p><p>
+
+After reading your FPGA board <a href="ftp://ftp.altera.com/up/pub/Altera_Material/Boards/DE1-SoC/DE1_SoC_User_Manual.pdf">user manual</a> you'll notice that the clock required to drive the video signals are not equivalent to the standard clocks on the FPGA board.
+
+</p><p>
+
+We will use a PLL (<em class="underscore">phase locked loop</em>) to achieve the desired clock period we will use: this circuit takes  a reference clock as input and outputs a clock signal with the desired frequency. You can think of it roughly in line with the clock divider we've already designed, with a major difference being that it can also result in an output clock signal that's <em class="underscore">faster</em> than the input. We will design our PLL using the Altera wizard (see <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/#instructions">Instructions</a> Section).
+
+</p><p>
+
+<a name="additionalresources"></a><a name="toc1.5"></a></p><h2>Additional Resources</h2>
+
+<p></p><p>
+
+Another complimentary reference on the VGA protocol is published in this <a href="https://eewiki.net/pages/viewpage.action?pageId=15925278">guide</a>. Note, however, some important differences between this guide and your FPGA manual: in the supplementary guide's synchronization diagram (Figure 3), the order of the synchronization delays and the data line timing is different (i.e., RGB raster data -&gt; front porch -&gt; sync -&gt; back porch) than what we outlined about.
+
+</p><p>
+
+For your lab, the timing protocol you will rely on for your signals (i.e., sync -&gt; back porch -&gt; RGB raster data -&gt; front porch) are still valid, albeit being relatively out-of-phase.
+
+</p><p>
+
+
+<a name="instructions"></a><a name="toc2"></a></p><h1>Instructions</h1>
+
+<p></p><p>
+
+Your goal is to draw color bars at a resolution of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-10-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;640&lt;/mn&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;mn&gt;480&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-35" style="width: 4.733em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.226em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.354em 1004.17em 2.368em -999.997em); top: -2.193em; left: 0em;"><span class="mrow" id="MathJax-Span-36"><span class="mn" id="MathJax-Span-37" style="font-family: MathJax_Main;">640</span><span class="mo" id="MathJax-Span-38" style="font-family: MathJax_Main; padding-left: 0.228em;">×</span><span class="mn" id="MathJax-Span-39" style="font-family: MathJax_Main; padding-left: 0.228em;">480</span></span><span style="display: inline-block; width: 0px; height: 2.199em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>640</mn><mo>×</mo><mn>480</mn></math></span></span><script type="math/tex" id="MathJax-Element-10">640 \times 480</script>. The synchronization constants for this resolution setting are provided in the file vga_controller.vhd and were taken from your DE1-Soc <a href="ftp://ftp.altera.com/up/pub/Altera_Material/Boards/DE1-SoC/DE1_SoC_User_Manual.pdf">user manual</a>.
+
+</p><p>
+
+<a name="step1"></a><a name="toc2.1"></a></p><h2>Step 1</h2>
+
+<p></p><p>
+
+Start by reading the DE1 <a href="ftp://ftp.altera.com/up/pub/Altera_Material/Boards/DE1-SoC/DE1_SoC_User_Manual.pdf">user manual</a>'s specification on VGA. 
+
+</p><p>
+
+</p><center><div class="image" style=""><img class="markdeep" src="./ECSE 222_ Digital Logic - Lab 3_files/vga_conn.png"><div class="imagecaption">DE1 VGA Connections</div></div></center>
+
+<p></p><p>
+
+Luckily, you don't have to implement a full VGA driver in hardware. Instead, you will write a module to interface with the VGA digital-to-analog chip on your FPGA board. The pin mapping for this chip can be found in your user manual; you will need to populate the pin planner on your own, this time (with some guidance: see more info in the instructional videos).
+
+</p><p>
+
+<a name="step2"></a><a name="toc2.2"></a></p><h2>Step 2</h2>
+
+<p></p><p>
+
+Unzip the following source files into the folder you will use for the lab: <a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/lab3_materials.zip">download</a>.
+
+</p><p>
+
+Set up your project using the following guideline:
+
+</p><p>
+
+
+</p><ul>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/lab3_part1.html">Setting up a project from bootstrap source files.</a>
+
+<p></p><p>
+
+    </p></li></ul>
+<a name="step3"></a><a name="toc2.3"></a><h2>Step 3</h2>
+
+<p></p><p>
+
+Add your own code for the following files:
+
+</p><p>
+
+</p><ul>
+    <li class="minus">video_blank.vhd
+</li>
+    <li class="minus">vga_controller.vhd
+
+<p></p><p>
+
+    </p></li></ul>
+<a name="step4"></a><a name="toc2.4"></a><h2>Step 4</h2>
+
+<p></p><p>
+
+Up to now, we've relied on Modelsim to <em class="underscore">simulate</em> and <em class="underscore">verify</em> the fuctionality of our circuits. In this lab, rather than only simulating our designs, we will use additional tooling to explore the signals that we're actually driving from our FPGA. The tool we'll use here is called the <strong class="underscore">Signal Tap</strong>.
+
+</p><p>
+
+By probing the output signals driven from our device to the screen, we can ensure that follow the synchronization protocol needed for correct interafcing with the VGA monitor. Here are some guiding instructions:
+
+</p><p>
+
+
+
+</p><p>
+
+</p><ul>
+    <li class="minus"><a href="http://www.cim.mcgill.ca/~derek/ecse222lab/Lab3/lab3_part2.html">Using the Signal Tap tool</a>.
+
+<p></p><p>
+
+    </p></li></ul>
+<a name="step4"></a><a name="toc2.5"></a><h2>Step 4</h2>
+
+<p></p><p>
+
+Perform a full recompile, load the configuration onto your board, and verify its behavior. Debug and repeat, if necessary.
+
+</p><p>
+
+
+<a name="grading"></a><a name="toc2.6"></a></p><h2>Grading</h2>
+
+<p></p><p>
+
+Once completed, please demo your project to the TA. You will be expected to:
+
+</p><p>
+
+</p><ul>
+    <li class="minus">fully explain the HDL code works,
+</li>
+    <li class="minus">demonstrate a screen with the correct colored lines pattern, and
+</li>
+    <li class="minus">demonstrate the timing dragram for one horizonal scanline.
+
+<p></p><p>
+
+    </p></li></ul>
+
+<p></p><p>
+
+<a name="youwillbeevaluatedaccordingtothefollowingrubrick:"></a><a name="toc3"></a></p><h1>You will be evaluated according to the following rubrick:</h1>
+
+<p></p><p>
+
+
+</p><ul>
+    <li class="minus"><strong class="underscore">[3 pts]</strong> Explain your VGA controller
+</li>
+    <li class="minus"><strong class="underscore">[2 pts]</strong> Screen shows correct colored bars
+</li>
+    <li class="minus"><strong class="underscore">[2 pts]</strong> Explain your trigger condition
+</li>
+    <li class="minus"><strong class="underscore">[2 pts]</strong> Signal Tap shows 1 horizontal scanline timing diagram
+</li>
+    <li class="minus"><strong class="underscore">[1 pts]</strong> Code comprehension: you will be asked about how to achieve a different resolution
+
+<p></p><p>
+
+    </p></li></ul>
+<a name="bonus"></a><a name="toc3.1"></a><h2>Bonus</h2>
+
+<p></p><p>
+
+
+</p><ul>
+    <li class="minus"><strong class="underscore">[1 pts]</strong> Draw a triangle that is at least 100 pixels wide and 100 pixels in height
+</li>
+    <li class="minus"><strong class="underscore">[1 pts]</strong> Draw at the highest resolution possible for the board
+
+<p></p><p>
+
+    </p></li></ul>
+<div class="endnote"><a name="endnote-footnote1"></a><sup>1</sup> The terms “front porch”, “sync pulse” and “back porch” are nothing more than a naming convention used in the literature.
+</div>
+<p></p><p>
+
+</p><div class="endnote"><a name="endnote-footnote2"></a><sup>2</sup> This is where the pixel data is actually communicated!
+</div>
+<p></p><p>
+
+<!-- Markdeep: --></p></span><div class="markdeepFooter"><i>formatted by <a href="http://casual-effects.com/markdeep" style="color:#999">Markdeep&nbsp;&nbsp;&nbsp;</a></i><div style="display:inline-block;font-size:13px;font-family:&#39;Times New Roman&#39;,serif;vertical-align:middle;transform:translate(-3px,-1px)rotate(135deg);">✒</div></div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_Main, sans-serif;"></div></div></body></html>

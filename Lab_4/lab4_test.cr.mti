@@ -1,0 +1,62 @@
+E:/Documents/Lab_4/video_gen.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Documents/Lab_4/video_gen.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity video_gen
+-- Compiling architecture behaviour of video_gen
+
+} {} {}} E:/Documents/Lab_4/random_32bit.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Documents/Lab_4/random_32bit.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity random_32bit
+-- Compiling architecture behaviour of random_32bit
+
+} {} {}} E:/Documents/Lab_4/color_decoder.vhd {0 {vcom -work work -2002 -explicit -stats=none E:/Documents/Lab_4/color_decoder.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity color_decoder
+-- Compiling architecture behaviour of color_decoder
+** Error: E:/Documents/Lab_4/color_decoder.vhd(30): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
+
+** Error: E:/Documents/Lab_4/color_decoder.vhd(65): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0} {}} E:/Documents/Lab_4/vga_controller.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Documents/Lab_4/vga_controller.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity vga_controller
+-- Compiling architecture behaviour of vga_controller
+
+} {} {}} E:/Documents/Lab_4/tb_game_controller.vhd {1 {vcom -work work -2008 -explicit -stats=none {E:\Documents\Lab_4\tb_game_controller.vhd}
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_game_controller
+-- Compiling architecture behaviour of tb_game_controller
+
+} {} {}} E:/Documents/Lab_4/vga_clk.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Documents/Lab_4/vga_clk.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity vga_clk
+-- Compiling architecture rtl of vga_clk
+
+} {} {}} E:/Documents/Lab_4/ram_video_buffer.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Documents/Lab_4/ram_video_buffer.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ram_video_buffer
+-- Compiling architecture behaviour of ram_video_buffer
+
+} {} {}}

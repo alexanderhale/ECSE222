@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[7]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[8]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[9]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "score_left_segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "score_right_segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "paddle_right",
+					"strict" : false
+				},
+				{
+					"name" : "paddle_left",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
